@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 This document describes the main folder structure of the entire project.\
+Here is the outline that categorize the folders and files to prevent confusion.\
+
+\b \ul Open Source Library folders and Files
+\b0 \ulnone \
+-a.exe\
+bower_components(folder)\
+Bower.json\
+ffmpeg.exe\
+Ffmpeg-3.3.1 2(folder)\
+ffprobe.exe\
+Ffserver.exe\
+node_modules(folder)\
+Package-lock.json\
+Package.json\
+views(folder)\
+(All the files or folders from above will not be explained in this readme file, since they are open source you can find the related information online)\
+\
+
+\b \ul Project Implementation\
+
+\b0 \ulnone App.js \'97This javascript file is the main script connects all the plugins together, which is also the script that you would run with node command in terminal\
+\
+config.js \'97This javascript file is the control script marks which plugins are used in the program, if you add more plugins into the plugins folder, you will need to add the name of the plugin into the config file in order to use the new plugin\
+	\
+plugins(folder) \'97 This folder includes all the feature plugins for the entire project, in the future if more plugins are develop, those plugins should be located here as well.\
+\
+Public(folder) \'97 This folder mainly contains the web application UI source file, including css, javascript and some images.}
